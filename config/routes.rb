@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :admins
+
   namespace :admin do
-    devise_for :admins
+    resources :employees
   end
+
 end

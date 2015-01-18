@@ -1,0 +1,6 @@
+%h1= employee.name
+
+%h2= employee.position
+
+= link_to 'Edit Employee', edit_admin_employee_path(id: employee.id)
+= link_to 'Back to Employees', admin_employees_path

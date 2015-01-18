@@ -1,0 +1,10 @@
+= form_for @employee, url: update_profile_path do |f|
+  = f.label :name
+  = f.text_field :name
+
+  = f.label :position
+  = f.text_field :position
+
+  = f.submit 'Save Profile'
+
+=link_to 'Back to your profile', profile_path
